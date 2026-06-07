@@ -152,14 +152,26 @@
       }
     ]
   },
+  "disclaimer": {
+    "title": "Rechtlicher Hinweis / Coaching-Disclaimer",
+    "paragraphs": [
+      "Die auf dieser Webseite angebotenen Informationen und Begleitungen dienen ausschließlich der allgemeinen Unterstützung eines gesundheitsbewussten Lebensstils sowie der Vermittlung von Wissen rund um Ernährung, Alltag und Wohlbefinden.",
+      "Es werden keine Diagnosen gestellt und keine Heilversprechen abgegeben. Die angebotene Begleitung ersetzt keine medizinische, heilpraktische oder therapeutische Diagnose, Behandlung oder Beratung durch Ärzt:innen, Heilpraktiker:innen oder andere medizinische Fachpersonen.",
+      "Die Empfehlungen verstehen sich als allgemeine, individuelle Impulse zur Unterstützung eines bewussten Lebensstils und erfolgen eigenverantwortlich.",
+      "Bei körperlichen oder psychischen Beschwerden, Erkrankungen oder anhaltenden Symptomen sollte stets eine medizinische Fachperson konsultiert werden.",
+      "Laborbasierte Analysen erfolgen ausschließlich über externe Fachlabore. Die Auswertung und Begleitung dienen der allgemeinen Orientierung und stellen keine medizinische Befundung dar.",
+      "Die Inhalte dieser Webseite dienen ausschließlich Informationszwecken und ersetzen keine individuelle medizinische Beratung."
+    ]
+  },
   "footer": {
     "name": "Christine Lohmüller",
     "title": "Diplomierte Prävention & Gesundheitstrainerin",
     "email": "Christine-fit@gmx.at",
     "ctaButton": "Mehr erfahren",
-    "copyright": "© 2024 DARMbalance | Hinweis: Meine Angebote dienen der Unterstützung und ersetzen keine medizinische oder therapeutische Beratung.",
+    "copyright": "© 2024 DARMbalance",
     "impressumLabel": "Impressum",
-    "datenschutzLabel": "Datenschutz"
+    "datenschutzLabel": "Datenschutz",
+    "disclaimerLabel": "Rechtlicher Hinweis"
   },
   "guide": {
     "label": "Kostenloser Guide",
