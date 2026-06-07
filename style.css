@@ -152,6 +152,12 @@ strong { font-weight: 600; }
   color: var(--color-primary);
 }
 
+.header__logo-img {
+  display: block;
+  height: 56px;
+  width: auto;
+}
+
 .logo-name {
   display: block;
   font-family: var(--font-heading);
@@ -822,6 +828,8 @@ strong { font-weight: 600; }
   }
   .header__inner > .btn { display: none; }
   .mobile-menu-btn { display: flex; }
+
+  .header__logo-img { height: 44px; }
 
   .hero__inner {
     grid-template-columns: 1fr;
