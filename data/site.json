@@ -38,6 +38,10 @@
         "href": "#angebot"
       },
       {
+        "label": "Begleitung",
+        "href": "#begleitung"
+      },
+      {
         "label": "Ablauf",
         "href": "#ablauf"
       },
@@ -162,6 +166,10 @@
       "Laborbasierte Analysen erfolgen ausschließlich über externe Fachlabore. Die Auswertung und Begleitung dienen der allgemeinen Orientierung und stellen keine medizinische Befundung dar.",
       "Die Inhalte dieser Webseite dienen ausschließlich Informationszwecken und ersetzen keine individuelle medizinische Beratung."
     ]
+  },
+  "coaching": {
+    "heading": "Ganzheitliche Begleitung",
+    "intro": "Jeder Mensch ist individuell. Deshalb basiert meine Begleitung nicht auf starren Konzepten, sondern auf einem ganzheitlichen Blick auf Ernährung, Alltag und deine persönlichen Bedürfnisse."
   },
   "footer": {
     "name": "Christine Lohmüller",

@@ -466,6 +466,130 @@ strong { font-weight: 600; }
   opacity: 0.8;
 }
 
+/* ===== BEGLEITUNG ===== */
+.coaching {
+  padding: 5rem 0;
+  background: var(--bg-white);
+}
+
+.coaching__intro {
+  text-align: center;
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  max-width: 58ch;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+.coaching__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 620px;
+  margin: 0 auto 3rem;
+}
+
+.coaching__step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.125rem 1.5rem;
+  background: var(--bg-main);
+  border-radius: var(--radius-md);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.coaching__step:hover {
+  box-shadow: var(--shadow-soft);
+  transform: translateX(4px);
+}
+
+.coaching__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--color-primary);
+  color: var(--text-light);
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.coaching__step strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.15rem;
+}
+
+.coaching__step span:last-child {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.coaching__price {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 2rem 3rem;
+  background: var(--bg-accent);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.price-card__label {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.price-card__amount {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.1;
+}
+
+.price-card__detail {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.price-card__note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  max-width: 30ch;
+}
+
+.coaching__legal {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  max-width: 56ch;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.coaching__legal a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.coaching__legal a:hover { opacity: 0.7; }
+
 /* ===== APPROACH ===== */
 .approach {
   padding: 5rem 0;
