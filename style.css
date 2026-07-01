@@ -148,14 +148,14 @@ strong { font-weight: 600; }
 
 .header__logo-icon {
   display: block;
-  width: 48px;
-  height: 48px;
+  width:80px;
+  height: 80px;
   flex-shrink: 0;
 }
 
 .header__brand {
   font-family: var(--font-heading);
-  font-size: 1.65rem;
+  font-size: 1.9rem;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--text-main);
@@ -174,7 +174,7 @@ strong { font-weight: 600; }
 }
 
 .header__nav a {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   color: var(--text-main);
   font-weight: 400;
   transition: color var(--transition);
