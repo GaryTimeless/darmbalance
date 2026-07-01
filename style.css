@@ -284,6 +284,16 @@ strong { font-weight: 600; }
   background: var(--bg-white);
 }
 
+/* Abstand zwischen Pain-Karten und Accordion innerhalb von #darmwissen */
+.pain > .container + .container {
+  padding-top: 4rem;
+}
+
+/* Accordion-Überschrift – mehr Abstand wenn innerhalb von .pain */
+.pain .section-heading {
+  margin-bottom: 2.5rem;
+}
+
 .pain__inner {
   display: grid;
   grid-template-columns: 1fr 2fr;
