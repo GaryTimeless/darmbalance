@@ -309,7 +309,7 @@ strong { font-weight: 600; }
 
 .pain__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -913,7 +913,9 @@ strong { font-weight: 600; }
     gap: 2.5rem;
   }
   .pain__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
   }
   .pain__intro p { max-width: 100%; }
 
