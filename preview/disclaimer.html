@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rechtlicher Hinweis – DARMbalance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="logo-icon.svg" />
+  <style>
+    .legal-page {
+      padding: 4rem 0;
+      min-height: 60vh;
+    }
+    .legal-page__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      margin-bottom: 2rem;
+      transition: opacity var(--transition);
+    }
+    .legal-page__back:hover { opacity: 0.7; }
+    .legal-page h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .legal-page h2 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .legal-page p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      max-width: 68ch;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="logo.svg" alt="DARMbalance" class="header__logo-img" width="200" height="70" />
+      </a>
+      <nav class="header__nav" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== CONTENT ===== -->
+  <main class="container legal-page">
+    <a href="index.html" class="legal-page__back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 18-6-6 6-6"/></svg>
+      Zurück zur Startseite
+    </a>
+
+    <h1>Rechtlicher Hinweis / Coaching-Disclaimer</h1>
+
+    <p>Die auf dieser Webseite angebotenen Informationen und Begleitungen dienen ausschließlich der allgemeinen Unterstützung eines gesundheitsbewussten Lebensstils sowie der Vermittlung von Wissen rund um Ernährung, Alltag und Wohlbefinden.</p>
+
+    <p>Es werden keine Diagnosen gestellt und keine Heilversprechen abgegeben. Die angebotene Begleitung ersetzt keine medizinische, heilpraktische oder therapeutische Diagnose, Behandlung oder Beratung durch Ärzt:innen, Heilpraktiker:innen oder andere medizinische Fachpersonen.</p>
+
+    <p>Die Empfehlungen verstehen sich als allgemeine, individuelle Impulse zur Unterstützung eines bewussten Lebensstils und erfolgen eigenverantwortlich.</p>
+
+    <p>Bei körperlichen oder psychischen Beschwerden, Erkrankungen oder anhaltenden Symptomen sollte stets eine medizinische Fachperson konsultiert werden.</p>
+
+    <p>Laborbasierte Analysen erfolgen ausschließlich über externe Fachlabore. Die Auswertung und Begleitung dienen der allgemeinen Orientierung und stellen keine medizinische Befundung dar.</p>
+
+    <p>Die Inhalte dieser Webseite dienen ausschließlich Informationszwecken und ersetzen keine individuelle medizinische Beratung.</p>
+  </main>
+
+  <!-- ===== SUB FOOTER ===== -->
+  <footer class="sub-footer">
+    <div class="container sub-footer__inner">
+      <p>© 2024 DARMbalance</p>
+      <div class="sub-footer__links">
+        <a href="disclaimer.html">Rechtlicher Hinweis</a>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

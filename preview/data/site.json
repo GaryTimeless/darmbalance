@@ -1,0 +1,183 @@
+{
+  "approach": {
+    "heading": "Mein Ansatz für deine Balance",
+    "cards": [
+      {
+        "title": "Ernährung bewusst gestalten",
+        "description": "Einfache, alltagstaugliche Impulse für deine Ernährung."
+      },
+      {
+        "title": "Verdauung unterstützen",
+        "description": "Den Darm verstehen und mit gezielten Routinen unterstützen."
+      },
+      {
+        "title": "Alltag & Stress regulieren",
+        "description": "Mehr Balance für Körper und Geist – für ein gutes Bauchgefühl."
+      }
+    ]
+  },
+  "banner": {
+    "heading": "Ein Labortest kann dir helfen, deinen Darm besser zu verstehen.",
+    "text": "Auf Basis laborgestützter Analysen erhältst du individuelle Einblicke, die dir als Orientierung für deine persönliche Darmbalance dienen können."
+  },
+  "header": {
+    "logoName": "DARM",
+    "logoNameBold": "balance",
+    "logoTagline": "GANZHEITLICH. BEWUSST. IM ALLTAG.",
+    "nav": [
+      {
+        "label": "Start",
+        "href": "#start"
+      },
+      {
+        "label": "Darmwissen",
+        "href": "#darmwissen"
+      },
+      {
+        "label": "Angebot",
+        "href": "#angebot"
+      },
+      {
+        "label": "Über mich",
+        "href": "#ueber-mich"
+      },
+      {
+        "label": "Kontakt",
+        "href": "#kontakt"
+      }
+    ],
+    "ctaButton": "Kostenlosen Guide sichern"
+  },
+  "about": {
+    "label": "Über mich",
+    "heading": "Ich bin Christine",
+    "paragraphs": [
+      {
+        "text": "Kennst du das, wenn dein Bauch einfach nicht mitspielt und du merkst, wie dich das im Alltag immer wieder ausbremst? Genau so ging es mir lange Zeit."
+      },
+      {
+        "text": "Früher habe ich im Vertrieb und im Einzelhandel gearbeitet — viel Stress, wenig Zeit, oft schnell irgendwas essen und weiter. Später habe ich mich im zweiten Bildungsweg für den Sport- und Gesundheitsbereich entschieden und mich selbstständig gemacht. Seit über zehn Jahren arbeite ich mit Menschen in Kursen, in Firmen, in Wellnesshotels und im Präventionsbereich."
+      },
+      {
+        "text": "Ich hatte über Jahre immer wieder Beschwerden, die mich im Alltag und im Sport eingeschränkt haben. Der Wendepunkt kam, als ich anfing, mich intensiver mit meinem Körper und meiner Ernährung auseinanderzusetzen. Schritt für Schritt habe ich gelernt, besser hinzuhören, Zusammenhänge zu verstehen und bewusster mit mir umzugehen."
+      },
+      {
+        "text": "Heute fühle ich mich wieder deutlich stabiler, fitter, habe mehr Energie und klarere Gedanken — und kann meinen Berufsalltag und meinen Sport viel entspannter genießen."
+      },
+      {
+        "text": "Genau deshalb möchte ich dich dabei unterstützen, deinen Körper besser zu verstehen und mehr Leichtigkeit in deinen Alltag zu bringen. Ohne komplizierte Pläne oder starre Regeln — sondern so, dass es wirklich zu deinem Leben passt."
+      }
+    ]
+  },
+  "reasons": {
+    "heading": "Fünf Gründe, warum es sich lohnt, sich um seinen Darm zu kümmern",
+    "items": [
+      {
+        "title": "Einfluss auf Stimmung und mentale Gesundheit",
+        "body": "Die Darm-Hirn-Achse verbindet den Darm mit dem zentralen Nervensystem. Durch ein gut aufgestelltes Darmmikrobiom wird die Produktion von Neurotransmittern positiv beeinflusst, die das emotionale Wohlbefinden steuern."
+      },
+      {
+        "title": "Eine gute Verdauung",
+        "body": "Ein gesundes Darmmikrobiom verbessert die Verdauung und hilft bei der Nahrungsverwertung. Es trägt zur Zersetzung von Nahrungsmitteln und zur Absorption von Nährstoffen bei, was langfristig zu einer besseren allgemeinen Gesundheit führt."
+      },
+      {
+        "title": "Stärkung des Immunsystems",
+        "body": "Rund 70 Prozent unseres Immunsystems befindet sich im Darm. Ein gesundes Mikrobiom trägt dazu bei, Krankheitserreger abzuwehren und das Immunsystem zu stärken. Faktoren wie eine darmgesunde Ernährung, ausreichend und guter Schlaf, Bewegung und mentale Ausgeglichenheit fördern das Wachstum nützlicher Bakterien, die das Immunsystem unterstützen."
+      },
+      {
+        "title": "Besser Schlaf",
+        "body": "[Text folgt]"
+      },
+      {
+        "title": "Mehr Energie",
+        "body": "hier müssen wir noch einen text einfügen"
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Das sagen andere",
+    "quotes": [
+      {
+        "text": "Die Impulse haben mir geholfen, bewusster mit meiner Ernährung umzugehen und mehr auf meinen Körper zu hören.",
+        "citation": "Lisa, 34"
+      },
+      {
+        "text": "Ich habe viele alltagstaugliche Ideen mitgenommen und fühle mich insgesamt ausgeglichener.",
+        "citation": "Markus, 41"
+      },
+      {
+        "text": "Die Begleitung war ein wertvoller Impuls, um meine Routinen positiv zu verändern. Ich fühle mich wohler in meinem Körper.",
+        "citation": "Sabine, 52"
+      }
+    ]
+  },
+  "painPoints": {
+    "heading": "Kennst du das?",
+    "intro": "Im hektischen Alltag bleibt der eigene Körper oft auf der Strecke. **Zeit, wieder bewusster auf dich zu achten.**",
+    "cards": [
+      {
+        "text": "Du möchtest deine Ernährung besser verstehen"
+      },
+      {
+        "text": "Du wünschst dir mehr Leichtigkeit und Wohlbefinden"
+      },
+      {
+        "text": "Du willst deinem Körper etwas Gutes tun"
+      }
+    ]
+  },
+  "hero": {
+    "headingLine1": "Für ein gutes",
+    "headingLine2": "Bauchgefühl",
+    "headingLine3": "im Alltag",
+    "subtext": "Ganzheitliche Impulse für eine bewusste Darmbalance – einfach umsetzbar und alltagstauglich.",
+    "primaryButton": "Mehr erfahren",
+    "secondaryButton": "Kostenlosen Guide sichern",
+    "badges": [
+      {
+        "line1": "Ganzheitlich",
+        "line2": "betrachtet"
+      },
+      {
+        "line1": "Laborgestützte",
+        "line2": "Einblicke"
+      },
+      {
+        "line1": "Individuelle",
+        "line2": "Begleitung"
+      }
+    ]
+  },
+  "disclaimer": {
+    "title": "Rechtlicher Hinweis / Coaching-Disclaimer",
+    "paragraphs": [
+      "Die auf dieser Webseite angebotenen Informationen und Begleitungen dienen ausschließlich der allgemeinen Unterstützung eines gesundheitsbewussten Lebensstils sowie der Vermittlung von Wissen rund um Ernährung, Alltag und Wohlbefinden.",
+      "Es werden keine Diagnosen gestellt und keine Heilversprechen abgegeben. Die angebotene Begleitung ersetzt keine medizinische, heilpraktische oder therapeutische Diagnose, Behandlung oder Beratung durch Ärzt:innen, Heilpraktiker:innen oder andere medizinische Fachpersonen.",
+      "Die Empfehlungen verstehen sich als allgemeine, individuelle Impulse zur Unterstützung eines bewussten Lebensstils und erfolgen eigenverantwortlich.",
+      "Bei körperlichen oder psychischen Beschwerden, Erkrankungen oder anhaltenden Symptomen sollte stets eine medizinische Fachperson konsultiert werden.",
+      "Laborbasierte Analysen erfolgen ausschließlich über externe Fachlabore. Die Auswertung und Begleitung dienen der allgemeinen Orientierung und stellen keine medizinische Befundung dar.",
+      "Die Inhalte dieser Webseite dienen ausschließlich Informationszwecken und ersetzen keine individuelle medizinische Beratung."
+    ]
+  },
+  "coaching": {
+    "heading": "Ganzheitliche Begleitung",
+    "intro": "Jeder Mensch ist individuell. Deshalb basiert meine Begleitung nicht auf starren Konzepten, sondern auf einem ganzheitlichen Blick auf Ernährung, Alltag und deine persönlichen Bedürfnisse."
+  },
+  "footer": {
+    "name": "Christine Lohmüller",
+    "title": "Diplomierte Prävention & Gesundheitstrainerin",
+    "email": "Christine-fit@gmx.at",
+    "ctaButton": "Mehr erfahren",
+    "copyright": "© 2024 DARMbalance",
+    "impressumLabel": "Impressum",
+    "datenschutzLabel": "Datenschutz",
+    "disclaimerLabel": "Rechtlicher Hinweis"
+  },
+  "guide": {
+    "label": "Kostenloses Booklet",
+    "heading": "Darmbewegungstraining – für dein gutes Bauchgefühl",
+    "description": "Sanfte Übungen aus Yoga, Pilates und Atemtechniken für eine gesunde Verdauung.",
+    "button": "Jetzt kostenfrei sichern",
+    "ebookTitle": "DARMBEWEGUNGS-\nTRAINING"
+  }
+}
