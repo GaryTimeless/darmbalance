@@ -270,145 +270,80 @@ strong { font-weight: 600; }
   object-position: center top;
 }
 
-/* ===== PAIN POINTS ===== */
-.pain {
+/* ===== BENEFITS ===== */
+.benefits {
   padding: 5rem 0;
   background: var(--bg-white);
 }
 
-/* Abstand zwischen Pain-Karten und Accordion innerhalb von #darmwissen */
-.pain > .container + .container {
-  padding-top: 8rem;
+.benefits__heading {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-/* Accordion-Überschrift – mehr Abstand wenn innerhalb von .pain */
-.pain .section-heading {
-  margin-bottom: 2.5rem;
-}
-
-.pain__inner {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 4rem;
-  align-items: start;
-}
-
-.pain__intro p {
+.benefits__intro {
+  font-size: 1.1rem;
   color: var(--text-muted);
-  font-size: 0.98rem;
-  max-width: 36ch;
+  max-width: 58ch;
+  margin: 1.25rem auto 0;
+  line-height: 1.7;
 }
 
-.pain__grid {
+.benefits__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.pain__card {
+.benefit-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 1rem;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1.5rem;
   border-radius: var(--radius-md);
   background: var(--bg-main);
   transition: box-shadow var(--transition), transform var(--transition);
 }
-.pain__card:hover {
+.benefit-card:hover {
   box-shadow: var(--shadow-soft);
   transform: translateY(-3px);
 }
 
-.pain__icon-wrap {
-  width: 64px;
-  height: 64px;
-  background: var(--bg-accent);
+.benefit-card__icon {
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
+  background: var(--bg-accent);
+  color: var(--color-primary);
+  display: grid;
+  place-items: center;
   flex-shrink: 0;
 }
-.pain__icon-wrap svg { width: 100%; height: 100%; }
 
-.pain__card p {
+.benefit-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.benefit-card p {
   font-size: 0.9rem;
-  color: var(--text-main);
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-/* ===== 5 GRÜNDE ACCORDION ===== */
-.reasons {
-  padding: 5rem 0;
-  background: var(--bg-main);
-}
-
-.reasons .section-heading {
-  margin-bottom: 3rem;
-}
-
-.reasons__accordion {
-  max-width: 760px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  border-top: 1px solid rgba(85, 107, 77, 0.2);
-  border-bottom: 1px solid rgba(85, 107, 77, 0.2);
-}
-
-.reasons__item {
-  border-bottom: 1px solid rgba(85, 107, 77, 0.12);
-}
-.reasons__item:last-child {
-  border-bottom: none;
-}
-
-.reasons__title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.25rem 0.5rem;
-  cursor: pointer;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-main);
-  list-style: none;
-  transition: color var(--transition);
-  user-select: none;
-}
-.reasons__title::-webkit-details-marker {
-  display: none;
-}
-.reasons__title:hover {
-  color: var(--color-primary);
-}
-
-.reasons__chevron {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  color: var(--color-primary);
-  transition: transform 0.3s ease;
-}
-.reasons__item[open] .reasons__chevron {
-  transform: rotate(180deg);
-}
-
-.reasons__body {
-  padding: 0 0.5rem 1.25rem;
-}
-.reasons__body p {
-  font-size: 0.93rem;
   color: var(--text-muted);
-  line-height: 1.75;
-  max-width: 64ch;
+  line-height: 1.65;
+}
+
+.benefits__tagline {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--color-primary);
 }
 
 /* ===== LABORANALYSE ===== */
@@ -1149,9 +1084,10 @@ strong { font-weight: 600; }
    =================================================== */
 
 @media (max-width: 1024px) {
-  .pain__inner {
+  .benefits__grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    max-width: 480px;
+    margin: 0 auto;
   }
   .about__inner {
     grid-template-columns: 280px 1fr;
