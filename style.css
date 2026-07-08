@@ -730,7 +730,7 @@ strong { font-weight: 600; }
 /* ===== ÜBER MICH ===== */
 .about {
   padding: 5rem 0;
-  background: var(--bg-white);
+  background: var(--bg-main);
 }
 
 .about__inner {
@@ -786,7 +786,7 @@ strong { font-weight: 600; }
 /* ===== GUIDE SECTION ===== */
 .guide-section {
   padding: 3rem 0 4rem;
-  background: var(--bg-accent);
+  background: var(--bg-main);
 }
 
 .guide-section__inner {
