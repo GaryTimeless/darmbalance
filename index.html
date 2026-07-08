@@ -28,6 +28,9 @@
       <button class="mobile-menu-btn" aria-label="Menü öffnen">
         <span></span><span></span><span></span>
       </button>
+      <button class="sort-toggle" aria-label="Abschnitte sortieren" title="Abschnitte sortieren">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      </button>
     </div>
   </header>
 
@@ -39,183 +42,192 @@
         <p class="hero__subtext" data-content="hero.subtext">Ganzheitliche Impulse für eine bewusste Darmbalance – einfach umsetzbar und alltagstauglich.</p>
       </div>
       <div class="hero__image" data-animate-delay>
-        <img src="Bild1.jpeg" alt="Glückliches Paar in der Natur" />
+        <img src="Bild1.jpeg" alt="Sportliche Frau in dehnender Pose" />
       </div>
     </div>
   </section>
 
   <!-- ===== DARMWISSEN ===== -->
-  <section class="pain" id="darmwissen">
-    <div class="container pain__inner">
-      <div class="pain__intro" data-animate>
-        <h2 class="section-heading" data-content="painPoints.heading">Kennst du das?</h2>
-        <p data-content-md="painPoints.intro">Im hektischen Alltag bleibt der eigene Körper oft auf der Strecke. <strong>Zeit, wieder bewusster auf dich zu achten.</strong></p>
-      </div>
-      <div class="pain__grid">
-        <div class="pain__card" data-animate>
-          <div class="pain__icon-wrap">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 12H32M20 12V10M28 12V10" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M16 12L14 36H34L32 12" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M20 22V30M24 20V30M28 24V30" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <p data-content="painPoints.cards.0.text">Du möchtest deine Ernährung besser verstehen</p>
-        </div>
-        <div class="pain__card" data-animate>
-          <div class="pain__icon-wrap">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="18" r="7" stroke="#556b4d" stroke-width="1.5"/>
-              <path d="M14 40C14 34.477 18.477 30 24 30C29.523 30 34 34.477 34 40" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M24 34L26 37L30 33" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <p data-content="painPoints.cards.1.text">Du wünschst dir mehr Leichtigkeit und Wohlbefinden</p>
-        </div>
-        <div class="pain__card" data-animate>
-          <div class="pain__icon-wrap">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 10C24 10 16 16 16 24C16 28.418 19.582 32 24 32C28.418 32 32 28.418 32 24C32 16 24 10 24 10Z" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M24 32V38" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M20 38H28" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M18 22C18 22 20 24 24 24C28 24 30 22 30 22" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <p data-content="painPoints.cards.2.text">Du willst deinem Körper etwas Gutes tun</p>
-        </div>
-      </div>
-    </div>
-
+  <section class="benefits" id="darmwissen">
     <div class="container">
-      <h2 class="section-heading text-center" data-animate>Fünf Gründe, warum es sich lohnt, <br>sich um seinen Darm zu kümmern</h2>
-      <div class="reasons__accordion" data-animate>
-        <details class="reasons__item">
-          <summary class="reasons__title">
-            <span data-content="reasons.items.0.title">Einfluss auf Stimmung und mentale Gesundheit</span>
-            <svg class="reasons__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
-          </summary>
-          <div class="reasons__body">
-            <p data-content="reasons.items.0.body">Die Darm-Hirn-Achse verbindet den Darm mit dem zentralen Nervensystem. Durch ein gut aufgestelltes Darmmikrobiom wird die Produktion von Neurotransmittern positiv beeinflusst, die das emotionale Wohlbefinden steuern.</p>
+      <div class="benefits__heading" data-animate>
+        <h2 class="section-heading text-center">Was ein gesunder Darm<br>für dich bewirken kann</h2>
+        <p class="benefits__intro">Dein Darm ist viel mehr als nur für die Verdauung da. Ein gesundes Darmmikrobiom kann dein Wohlbefinden auf vielen Ebenen positiv beeinflussen.</p>
+      </div>
+
+      <div class="benefits__grid">
+        <article class="benefit-card" data-animate>
+          <div class="benefit-card__icon">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 10v28"/><path d="M15 20c2-6 16-6 18 0"/><path d="M16 31c3 3 13 3 16 0"/><path d="M8 24H3M45 24h-5M12 12L8 8M36 12l4-4"/></svg>
           </div>
-        </details>
-        <details class="reasons__item">
-          <summary class="reasons__title">
-            <span data-content="reasons.items.1.title">Eine gute Verdauung</span>
-            <svg class="reasons__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
-          </summary>
-          <div class="reasons__body">
-            <p data-content="reasons.items.1.body">Ein gesundes Darmmikrobiom verbessert die Verdauung und hilft bei der Nahrungsverwertung. Es trägt zur Zersetzung von Nahrungsmitteln und zur Absorption von Nährstoffen bei, was langfristig zu einer besseren allgemeinen Gesundheit führt.</p>
+          <h3>Mehr <span class="accent">Energie</span></h3>
+          <p>Ein gesundes Darmmikrobiom unterstützt die Nährstoffaufnahme und sorgt für eine bessere Energieversorgung deiner Zellen.</p>
+        </article>
+
+        <article class="benefit-card" data-animate>
+          <div class="benefit-card__icon">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 38A17 17 0 1 1 17 8a14 14 0 1 0 15 30z"/><path d="M36 9l1.5 4L42 15l-4.5 1.5L36 21l-1.5-4.5L30 15l4.5-2z"/></svg>
           </div>
-        </details>
-        <details class="reasons__item">
-          <summary class="reasons__title">
-            <span data-content="reasons.items.2.title">Stärkung des Immunsystems</span>
-            <svg class="reasons__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
-          </summary>
-          <div class="reasons__body">
-            <p data-content="reasons.items.2.body">Rund 70 Prozent unseres Immunsystems befindet sich im Darm. Ein gesundes Mikrobiom trägt dazu bei, Krankheitserreger abzuwehren und das Immunsystem zu stärken. Faktoren wie eine darmgesunde Ernährung, ausreichend und guter Schlaf, Bewegung und mentale Ausgeglichenheit fördern das Wachstum nützlicher Bakterien, die das Immunsystem unterstützen.</p>
+          <h3>Besser <span class="accent">schlafen</span></h3>
+          <p>Gesunde Darmbakterien fördern die Bildung von Serotonin und Melatonin und können helfen, den Cortisolspiegel zu regulieren – für erholsamen Schlaf.</p>
+        </article>
+
+        <article class="benefit-card" data-animate>
+          <div class="benefit-card__icon">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 39c-6 0-11-5-11-11 0-4 2-7 5-9 0-6 5-10 11-10 3 0 6 1 8 3 5 1 8 5 8 10 3 2 5 5 5 9 0 6-5 10-11 10"/><path d="M24 9v32M16 22c3 0 5-2 5-5M32 22c-3 0-5-2-5-5M16 31c3 0 5 2 5 5M32 31c-3 0-5 2-5 5"/></svg>
           </div>
-        </details>
-        <details class="reasons__item">
-          <summary class="reasons__title">
-            <span data-content="reasons.items.3.title">Besser Schlaf</span>
-            <svg class="reasons__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
-          </summary>
-          <div class="reasons__body">
-            <p data-content="reasons.items.3.body">[Text folgt]</p>
+          <h3>Stimmung &amp; mentale <span class="accent">Gesundheit</span></h3>
+          <p>Über die Darm-Hirn-Achse beeinflusst dein Darm die Produktion wichtiger Botenstoffe, die deine Stimmung, Konzentration und mentale Balance unterstützen.</p>
+        </article>
+
+        <article class="benefit-card" data-animate>
+          <div class="benefit-card__icon">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l16 6v12c0 10-6 17-16 20C14 40 8 33 8 23V11z"/><path d="M24 15v18M15 24h18"/></svg>
           </div>
-        </details>
-        <details class="reasons__item">
-          <summary class="reasons__title">
-            <span data-content="reasons.items.4.title">Mehr Energie</span>
-            <svg class="reasons__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
-          </summary>
-          <div class="reasons__body">
-            <p data-content="reasons.items.4.body">[Text folgt]</p>
+          <h3>Starkes <span class="accent">Immunsystem</span></h3>
+          <p>Rund 70 % deines Immunsystems befindet sich im Darm. Ein gesundes Mikrobiom stärkt deine Abwehrkräfte und schützt dich vor Krankheitserregern.</p>
+        </article>
+
+        <article class="benefit-card" data-animate>
+          <div class="benefit-card__icon">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 41V22"/><path d="M24 24C14 24 9 18 8 8c10 1 16 6 16 16z"/><path d="M24 29c10 0 15-6 16-16-10 1-16 6-16 16z"/></svg>
           </div>
-        </details>
+          <h3>Gute <span class="accent">Verdauung</span></h3>
+          <p>Ein ausgeglichenes Mikrobiom unterstützt die Verdauung, die Nährstoffaufnahme und kann Blähungen, Völlegefühl und Verstopfung entgegenwirken.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== ANGEBOT ===== -->
-  <section class="banner" id="angebot">
-    <div class="container">
-      <div class="banner__inner" data-animate>
-        <div class="banner__img">
-          <img src="Bild2.jpeg" alt="Laboranalyse" />
-        </div>
-        <div class="banner__text">
-          <h2 data-content="banner.heading">Ein Labortest kann dir helfen, deinen Darm besser zu verstehen.</h2>
-          <p data-content="banner.text">Auf Basis laborgestützter Analysen erhältst du individuelle Einblicke, die dir als Orientierung für deine persönliche Darmbalance dienen können.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- ===== GANZHEITLICHE BEGLEITUNG ===== -->
   <section class="coaching">
     <div class="container">
       <h2 class="section-heading text-center" data-animate data-content="coaching.heading">Ganzheitliche Begleitung</h2>
       <p class="coaching__intro" data-animate data-content="coaching.intro">Jeder Mensch ist individuell. Deshalb basiert meine Begleitung nicht auf starren Konzepten, sondern auf einem ganzheitlichen Blick auf Ernährung, Alltag und deine persönlichen Bedürfnisse.</p>
 
-      <div class="coaching__steps" data-animate>
-        <div class="coaching__step">
-          <span class="coaching__num">1</span>
-          <div>
-            <strong>Kennenlerngespräch</strong>
-            <span>15 Min. – unverbindlich &amp; kostenlos</span>
-          </div>
-        </div>
-        <div class="coaching__step">
-          <span class="coaching__num">2</span>
-          <div>
-            <strong>Gesundheitsfragebogen &amp; optionale Stuhlanalyse</strong>
-            <span>Individueller Überblick über Ernährung, Alltag und Verdauung</span>
-          </div>
-        </div>
-        <div class="coaching__step">
-          <span class="coaching__num">3</span>
-          <div>
-            <strong>Auswertungsgespräch</strong>
-            <span>Individuelle Empfehlungen und alltagstaugliche Impulse</span>
-          </div>
-        </div>
-        <div class="coaching__step">
-          <span class="coaching__num">4</span>
-          <div>
-            <strong>Erste Umstellungsphase</strong>
-            <span>14 Tage – einfache Veränderungen in deinem Tempo</span>
-          </div>
-        </div>
-        <div class="coaching__step">
-          <span class="coaching__num">5</span>
-          <div>
-            <strong>Follow-up Gespräch</strong>
-            <span>Erfahrungen reflektieren, nächste Schritte planen</span>
-          </div>
-        </div>
-        <div class="coaching__step">
-          <span class="coaching__num">6</span>
-          <div>
-            <strong>Begleitung im Alltag</strong>
-            <span>Persönliche Unterstützung – ohne Druck, ohne starre Vorgaben</span>
-          </div>
-        </div>
-        <div class="coaching__step">
-          <span class="coaching__num">7</span>
-          <div>
-            <strong>Abschlussgespräch</strong>
-            <span>Nach ca. 3 Monaten – Rückblick und Ausblick</span>
-          </div>
-        </div>
-      </div>
+      <details class="coaching__accordion">
+        <summary class="coaching__accordion-summary">
+          <span>So läuft die Begleitung ab</span>
+          <svg class="coaching__accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </summary>
 
-      <div class="coaching__price" data-animate>
-        <div class="price-card">
-          <span class="price-card__label">Investition</span>
-          <span class="price-card__amount">300 €</span>
-          <span class="price-card__detail">Individuelle 3-Monats-Begleitung</span>
-          <span class="price-card__note">Optionale laborbasierte Analyse wird separat berechnet.</span>
+        <div class="coaching__steps" data-animate>
+          <div class="coaching__step">
+            <span class="coaching__num"><svg width="18" height="18" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14c0-5 4-9 9-9h14c5 0 9 4 9 9v9c0 5-4 9-9 9H20L9 41l3-10c-3-2-4-5-4-8z"/></svg></span>
+            <div>
+              <strong>Kennenlerngespräch</strong>
+              <span>15 Min. – unverbindlich &amp; kostenlos</span>
+            </div>
+          </div>
+          <div class="coaching__step">
+            <span class="coaching__num"><svg width="18" height="18" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 11h20M14 23h20M14 35h14"/></svg></span>
+            <div>
+              <strong>Gesundheitsfragebogen &amp; optionale Stuhlanalyse</strong>
+              <span>Individueller Überblick über Ernährung, Alltag und Verdauung</span>
+            </div>
+          </div>
+          <div class="coaching__step">
+            <span class="coaching__num"><svg width="18" height="18" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 39V9h30v30z"/><path d="M16 31V21M24 31V15M32 31v-7"/><path d="M14 35h20"/></svg></span>
+            <div>
+              <strong>Auswertungsgespräch</strong>
+              <span>Individuelle Empfehlungen und alltagstaugliche Impulse</span>
+            </div>
+          </div>
+          <div class="coaching__step">
+            <span class="coaching__num"><svg width="18" height="18" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 41V22"/><path d="M24 24C14 24 9 18 8 8c10 1 16 6 16 16z"/><path d="M24 29c10 0 15-6 16-16-10 1-16 6-16 16z"/></svg></span>
+            <div>
+              <strong>Erste Umstellungsphase</strong>
+              <span>14 Tage – einfache Veränderungen in deinem Tempo</span>
+            </div>
+          </div>
+          <div class="coaching__step">
+            <span class="coaching__num"><svg width="18" height="18" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8l6 7-4 4c4 8 10 12 18 14l3-5 8 5c-1 6-4 9-9 9C20 42 6 28 6 10c0-5 4-8 10-2z"/><path d="M31 11h10v11"/><path d="M31 22l10-11"/></svg></span>
+            <div>
+              <strong>Follow-up Gespräch</strong>
+              <span>Erfahrungen reflektieren, nächste Schritte planen</span>
+            </div>
+          </div>
+          <div class="coaching__step">
+            <span class="coaching__num"><svg width="18" height="18" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="34" height="31" rx="4"/><path d="M15 6v8M33 6v8M7 19h34"/></svg></span>
+            <div>
+              <strong>Begleitung im Alltag</strong>
+              <span>Persönliche Unterstützung – ohne Druck, ohne starre Vorgaben</span>
+            </div>
+          </div>
+          <div class="coaching__step">
+            <span class="coaching__num"><svg width="18" height="18" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l16 6v12c0 10-6 17-16 20C14 40 8 33 8 23V11z"/><path d="M24 15v18M15 24h18"/></svg></span>
+            <div>
+              <strong>Abschlussgespräch</strong>
+              <span>Nach ca. 3 Monaten – Rückblick und Ausblick</span>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 3-stufiges Preismodell -->
+      <div class="offers" data-animate>
+        <div class="offer-grid">
+
+          <article class="offer-card">
+            <div class="offer-card__icon">
+              <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M29 19l-4 12-6-3 4-12z"/><path d="M24 4v5M24 39v5M4 24h5M39 24h5"/></svg>
+            </div>
+            <h3>Persönliche Standortbestimmung</h3>
+            <p class="offer-card__script">Klarheit gewinnen. Orientierung finden.</p>
+            <div class="offer-card__price"><span>99 €</span><small>ca. 60 Minuten</small></div>
+            <p>Gemeinsam schauen wir auf deine aktuelle Situation, deinen Alltag und deine Ziele.</p>
+            <ul class="offer-card__list">
+              <li>Ausführliches Erstgespräch</li>
+              <li>Gesundheitsfragebogen</li>
+              <li>Einordnung deiner aktuellen Situation</li>
+              <li>Orientierung für mögliche nächste Schritte</li>
+              <li>Einschätzung, ob eine Laboranalyse sinnvoll sein kann</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--outline">Mehr erfahren</a>
+          </article>
+
+          <article class="offer-card offer-card--featured">
+            <span class="offer-card__badge">Empfohlen ♡</span>
+            <div class="offer-card__icon offer-card__icon--accent">
+              <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M25 41c-1-11 3-22 15-30-13 0-25 7-27 21"/><path d="M16 32c7-1 14-5 21-16"/><path d="M18 22C13 14 9 10 5 8c0 10 5 17 13 19"/></svg>
+            </div>
+            <h3>Darmbalance-Begleitung</h3>
+            <p class="offer-card__script">Tiefgehende Begleitung für nachhaltige Balance.</p>
+            <div class="offer-card__price"><span>299 €</span><small>3 Monate Begleitung</small></div>
+            <p>Für alle, die ihre Darmgesundheit bewusster verstehen und nachhaltig unterstützen möchten.</p>
+            <ul class="offer-card__list">
+              <li>Kennenlern- und Anamnesegespräch</li>
+              <li>Gesundheitsfragebogen</li>
+              <li>Laboranalyse</li>
+              <li>Ausführliche Besprechung der Ergebnisse</li>
+              <li>3 persönliche Begleitgespräche je ca. 30 Minuten</li>
+              <li>Individuelle Einordnung &amp; alltagstaugliche Impulse</li>
+              <li>3 Monate Begleitung</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--primary">Kostenloses Kennenlernen vereinbaren</a>
+          </article>
+
+          <article class="offer-card">
+            <div class="offer-card__icon">
+              <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8l6 7-4 4c4 8 10 12 18 14l3-5 8 5c-1 6-4 9-9 9C20 42 6 28 6 10c0-5 4-8 10-2z"/><path d="M31 11h10v11"/><path d="M31 22l10-11"/></svg>
+            </div>
+            <h3>Begleitgespräche nach der Begleitung</h3>
+            <p class="offer-card__script">Flexibel bleiben. Unterstützung erhalten.</p>
+            <div class="offer-card__price"><span>ab 39 €</span><small>pro Gespräch</small></div>
+            <p>Für Fragen, Reflexion oder eine erneute Einordnung nach Abschluss der Begleitung.</p>
+            <div class="offer-card__callboxes">
+              <div class="callbox">
+                <svg width="24" height="24" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="34" height="31" rx="4"/><path d="M15 6v8M33 6v8M7 19h34"/></svg>
+                <div><strong>Begleitgespräch</strong><small>ca. 30 Minuten</small></div>
+              </div>
+              <div class="callbox">
+                <svg width="24" height="24" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="34" height="31" rx="4"/><path d="M15 6v8M33 6v8M7 19h34"/></svg>
+                <div><strong>Intensivgespräch</strong><small>ca. 60 Minuten</small></div>
+              </div>
+            </div>
+            <p class="offer-card__note">Weitere Gespräche sind flexibel nach Bedarf buchbar.</p>
+          </article>
+
         </div>
       </div>
 
@@ -225,68 +237,11 @@
     </div>
   </section>
 
-  <section class="approach">
-    <div class="container">
-      <h2 class="section-heading text-center" data-animate data-content="approach.heading">Mein Ansatz für deine Balance</h2>
-      <div class="approach__grid">
-        <div class="approach__card" data-animate>
-          <div class="approach__icon">
-            <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="28" cy="28" r="26" fill="#ebe5d9"/>
-              <path d="M28 18C25 18 22 20 22 24C22 26 23.5 27.5 25 28.5L22 34H34L31 28.5C32.5 27.5 34 26 34 24C34 20 31 18 28 18Z" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M25 34V37C25 38.1 25.9 39 27 39H29C30.1 39 31 38.1 31 37V34" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 data-content="approach.cards.0.title">Ernährung bewusst gestalten</h3>
-          <p data-content="approach.cards.0.description">Einfache, alltagstaugliche Impulse für deine Ernährung.</p>
-        </div>
-        <div class="approach__card" data-animate>
-          <div class="approach__icon">
-            <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="28" cy="28" r="26" fill="#ebe5d9"/>
-              <path d="M20 24C20 24 18 28 20 32C22 36 28 38 34 36C36 35 38 33 38 31C38 27 34 26 32 28C30 30 30 34 26 34C22 34 20 30 22 26C24 22 28 20 28 20" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M28 20C28 20 30 22 30 24" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 data-content="approach.cards.1.title">Verdauung unterstützen</h3>
-          <p data-content="approach.cards.1.description">Den Darm verstehen und mit gezielten Routinen unterstützen.</p>
-        </div>
-        <div class="approach__card" data-animate>
-          <div class="approach__icon">
-            <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="28" cy="28" r="26" fill="#ebe5d9"/>
-              <path d="M28 16C25 16 22 18.5 22 22C22 26 26 28 28 28C30 28 34 26 34 22C34 18.5 31 16 28 16Z" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M22 32C22 32 16 34 16 40H40C40 34 34 32 34 32" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M24 30L28 34L32 30" stroke="#556b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 data-content="approach.cards.2.title">Alltag &amp; Stress regulieren</h3>
-          <p data-content="approach.cards.2.description">Mehr Balance für Körper und Geist – für ein gutes Bauchgefühl.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <div class="container">
-      <h2 class="section-heading text-center" data-animate data-content="testimonials.heading">Das sagen andere</h2>
-      <div class="testimonials__grid" data-content-list="testimonials.quotes">
-        <template>
-          <div class="testimonial__card" data-animate>
-            <span class="testimonial__quote">&ldquo;</span>
-            <p data-content="text">Die Impulse haben mir geholfen, bewusster mit meiner Ernährung umzugehen und mehr auf meinen Körper zu hören.</p>
-            <cite data-content="citation">Lisa, 34</cite>
-          </div>
-        </template>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== ÜBER MICH ===== -->
   <section class="about" id="ueber-mich">
     <div class="container about__inner">
       <div class="about__image" data-animate>
-        <img src="Uebermich.jpeg" alt="Christine Lohmüller Portrait" />
+        <img src="christine-portrait.jpg" alt="Christine Lohmüller" />
       </div>
       <div class="about__content" data-animate>
         <span class="about__label" data-content="about.label">Über mich</span>
@@ -300,6 +255,34 @@
     </div>
   </section>
 
+  <!-- ===== KONTAKT ===== -->
+  <section class="contact" id="kontakt">
+    <div class="container">
+      <div class="contact__card" data-animate>
+        <div class="contact__header">
+          <h2>Bereit für deinen ersten Schritt?</h2>
+          <p>Schreib mir – ich melde mich bei dir für ein kostenloses Kennenlerngespräch.</p>
+        </div>
+        <form class="contact__form" action="#" method="POST">
+          <div class="contact__field">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Dein Name" required />
+          </div>
+          <div class="contact__field">
+            <label for="contact-email">E-Mail</label>
+            <input type="email" id="contact-email" name="email" placeholder="deine@email.at" required />
+          </div>
+          <div class="contact__field">
+            <label for="contact-message">Nachricht</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Wobei kann ich dich unterstützen?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary contact__submit">Nachricht senden</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KOSTENLOSER GUIDE ===== -->
   <section class="guide-section">
     <div class="container guide-section__inner" data-animate>
       <div class="guide-section__content">
@@ -321,23 +304,19 @@
     </div>
   </section>
 
-  <!-- ===== CTA FOOTER ===== -->
-  <section class="cta-footer" id="kontakt">
-    <div class="container cta-footer__inner">
-      <div class="cta-footer__left">
-        <div>
-          <h2 data-content="footer.name">Christine Lohmüller</h2>
-          <p data-content="footer.title">Diplomierte Prävention & Gesundheitstrainerin</p>
-          <a data-content-href="footer.email" data-content="footer.email" href="mailto:Christine-fit@gmx.at">
-          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:14px;height:14px;flex-shrink:0">
-          <rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/>
-          <path d="M2 7L10 12L18 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-        </svg>
-        <span data-content="footer.email">Christine-fit@gmx.at</span>
-      </a>
-        </div>
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-heading text-center" data-animate data-content="testimonials.heading">Das sagen andere</h2>
+      <div class="testimonials__grid" data-content-list="testimonials.quotes">
+        <template>
+          <div class="testimonial__card" data-animate>
+            <span class="testimonial__quote">&ldquo;</span>
+            <p data-content="text">Die Impulse haben mir geholfen, bewusster mit meiner Ernährung umzugehen und mehr auf meinen Körper zu hören.</p>
+            <cite data-content="citation">Lisa, 34</cite>
+          </div>
+        </template>
       </div>
-      <a href="#angebot" class="btn btn--outline-white" data-content="footer.ctaButton">Mehr erfahren</a>
     </div>
   </section>
 
@@ -352,6 +331,130 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== SORTIER-MODUS ===== -->
+  <script>
+    (function() {
+      var STORAGE_KEY = 'darmbalance_section_order_v2';
+      var toggle = document.querySelector('.sort-toggle');
+      var active = false;
+      var body = document.body;
+
+      function getSectionIds() {
+        return Array.from(document.querySelectorAll('body > section')).map(function(s) {
+          return s.id || s.className.split(' ')[0];
+        });
+      }
+
+      function createArrow(dir) {
+        var btn = document.createElement('button');
+        btn.className = 'sort-arrow sort-arrow--' + dir;
+        btn.innerHTML = dir === 'up' ? '&#9650;' : '&#9660;';
+        btn.setAttribute('aria-label', dir === 'up' ? 'Nach oben' : 'Nach unten');
+        return btn;
+      }
+
+      function attachArrows() {
+        var sections = document.querySelectorAll('body > section');
+        sections.forEach(function(sec) {
+          var wrap = document.createElement('div');
+          wrap.className = 'sort-wrapper';
+          sec.parentNode.insertBefore(wrap, sec);
+          wrap.appendChild(sec);
+
+          var arrows = document.createElement('div');
+          arrows.className = 'sort-arrows';
+          arrows.appendChild(createArrow('up'));
+          arrows.appendChild(createArrow('down'));
+          wrap.appendChild(arrows);
+        });
+      }
+
+      function detachArrows() {
+        document.querySelectorAll('.sort-wrapper').forEach(function(wrap) {
+          var sec = wrap.querySelector('section');
+          var arrows = wrap.querySelector('.sort-arrows');
+          if (arrows) arrows.remove();
+          wrap.parentNode.insertBefore(sec, wrap);
+          wrap.remove();
+        });
+      }
+
+      function updateArrows() {
+        var wrappers = document.querySelectorAll('.sort-wrapper');
+        wrappers.forEach(function(wrap, i) {
+          var up = wrap.querySelector('.sort-arrow--up');
+          var down = wrap.querySelector('.sort-arrow--down');
+          if (up) up.style.visibility = i === 0 ? 'hidden' : 'visible';
+          if (down) down.style.visibility = i === wrappers.length - 1 ? 'hidden' : 'visible';
+        });
+      }
+
+      function swap(a, b) {
+        var parent = a.parentNode;
+        var afterB = b.nextSibling;
+        parent.insertBefore(b, a);
+        parent.insertBefore(a, afterB);
+        updateArrows();
+      }
+
+      function saveOrder() {
+        var ids = getSectionIds();
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(ids));
+      }
+
+      function applySavedOrder() {
+        var saved = localStorage.getItem(STORAGE_KEY);
+        if (!saved) return;
+        var ids;
+        try { ids = JSON.parse(saved); } catch(e) { return; }
+        if (!Array.isArray(ids)) return;
+
+        var bodyEl = document.body;
+        ids.forEach(function(id) {
+          var sec = document.getElementById(id) || document.querySelector('body > section.' + id);
+          if (sec && sec.parentNode === bodyEl) {
+            bodyEl.appendChild(sec);
+          }
+        });
+      }
+
+      // Beim Laden: gespeicherte Reihenfolge wiederherstellen
+      applySavedOrder();
+
+      toggle.addEventListener('click', function() {
+        active = !active;
+        body.classList.toggle('sort-mode', active);
+        toggle.classList.toggle('sort-toggle--active', active);
+
+        if (active) {
+          attachArrows();
+          updateArrows();
+        } else {
+          detachArrows();
+          saveOrder();
+        }
+      });
+
+      // Event delegation for arrow clicks
+      document.addEventListener('click', function(e) {
+        if (!active) return;
+        var arrow = e.target.closest('.sort-arrow');
+        if (!arrow) return;
+        var wrap = arrow.closest('.sort-wrapper');
+        if (!wrap) return;
+        var dir = arrow.classList.contains('sort-arrow--up') ? 'up' : 'down';
+        var sibling = dir === 'up' ? wrap.previousElementSibling : wrap.nextElementSibling;
+        if (!sibling || !sibling.classList.contains('sort-wrapper')) return;
+        if (dir === 'up') {
+          swap(sibling, wrap);
+        } else {
+          swap(wrap, sibling);
+        }
+        saveOrder();
+      });
+    })();
+  </script>
 
   <script>
     // Intersection Observer for scroll animations
