@@ -435,6 +435,17 @@ strong { font-weight: 600; }
   padding: 2.5rem 3rem;
 }
 
+.lab__images {
+  margin-bottom: 2rem;
+}
+
+.lab__photo {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
 .lab__content h2 {
   font-family: var(--font-heading);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
@@ -527,8 +538,9 @@ strong { font-weight: 600; }
   font-weight: 600;
   flex-shrink: 0;
 }
-.coaching__num svg {
-  display: block;
+.coaching__num i {
+  font-size: 18px;
+  line-height: 1;
 }
 
 .coaching__step strong {
@@ -664,6 +676,10 @@ strong { font-weight: 600; }
   display: grid;
   place-items: center;
   margin: 0 auto 1.25rem;
+}
+.offer-card__icon i {
+  font-size: 34px;
+  line-height: 1;
 }
 
 .offer-card__icon--accent {
@@ -1133,9 +1149,8 @@ strong { font-weight: 600; }
   }
   .guide-section__content .btn { align-self: center; }
 
-
-
-
+  .lab__content { padding: 2rem 0.5rem 0; }
+  .lab__content p { font-size: 1rem; }
 
   .testimonials__grid {
     grid-template-columns: 1fr;
@@ -1168,29 +1183,35 @@ strong { font-weight: 600; }
   }
 }
 
+/* ===== MOBILE: nur Überschriften, keine Texte ===== */
+@media (max-width: 767px) {
+  .benefit-card p {
+    display: none;
+  }
+  .benefit-card__chevron {
+    display: none;
+  }
+  .benefit-card__summary {
+    cursor: default;
+    justify-content: center;
+  }
+  .benefit-card__summary h3 {
+    text-align: center;
+    flex: 0 1 auto;
+  }
+}
+
 /* ===== DESKTOP: Darmwissen-Grid ===== */
 @media (min-width: 768px) {
   .benefits__grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     max-width: 960px;
     padding: 0 2rem;
     align-items: start;
   }
 
-  /* Jede Karte spannt 2 von 6 Spalten → 3 Karten pro Reihe */
-  .benefit-card {
-    grid-column: span 2;
-  }
-
-  /* Letzte 2 Karten in die Mitte rücken (statt linksbündig) */
-  .benefit-card:nth-child(4) {
-    grid-column: 2 / span 2;
-  }
-  .benefit-card:nth-child(5) {
-    grid-column: 4 / span 2;
-  }
 
   .benefit-card__summary {
     flex-direction: column;
