@@ -26,12 +26,12 @@
     "logoTagline": "GANZHEITLICH. BEWUSST. IM ALLTAG.",
     "nav": [
       {
-        "label": "Start",
-        "href": "#start"
-      },
-      {
         "label": "Gut für dich",
         "href": "#gut-fuer-dich"
+      },
+      {
+        "label": "Labor",
+        "href": "#laboranalyse"
       },
       {
         "label": "Angebot",
@@ -73,7 +73,7 @@
     "heading": "Fünf Gründe, warum es sich lohnt, sich um seinen Darm zu kümmern",
     "items": [
       {
-        "title": "Einfluss auf Stimmung und mentale Gesundheit",
+        "title": "Einfluss auf Stimmung und mentale Balance",
         "body": "Die Darm-Hirn-Achse verbindet den Darm mit dem zentralen Nervensystem. Durch ein gut aufgestelltes Darmmikrobiom wird die Produktion von Neurotransmittern positiv beeinflusst, die das emotionale Wohlbefinden steuern."
       },
       {
