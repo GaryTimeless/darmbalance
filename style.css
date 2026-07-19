@@ -632,7 +632,7 @@ strong { font-weight: 600; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 42px 28px;
-  align-items: start;
+  align-items: stretch;
   max-width: 880px;
   margin: 0 auto;
 }
@@ -840,7 +840,7 @@ strong { font-weight: 600; }
   font-size: 0.78rem;
   color: var(--text-muted);
   max-width: 56ch;
-  margin: 0 auto;
+  margin: 2.5rem auto 0;
   line-height: 1.6;
 }
 .coaching__legal a {
