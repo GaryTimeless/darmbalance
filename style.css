@@ -622,27 +622,31 @@ strong { font-weight: 600; }
   margin-bottom: 0;
 }
 
-/* ===== 3-STUFIGES PREISMODELL ===== */
+/* ===== 2-STUFIGES PREISMODELL ===== */
 .offers {
-  max-width: var(--max-width);
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .offer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 42px 28px;
   align-items: start;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
+/* ----- Karte ----- */
 .offer-card {
+  position: relative;
   background: var(--bg-white);
   border: 1px solid var(--color-line);
-  border-radius: 28px;
+  border-radius: 18px;
+  padding: 60px 34px 40px;
+  margin-top: 42px;
+  text-align: center;
   box-shadow: var(--shadow-card);
-  padding: 2rem 1.5rem;
-  text-align: left;
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -651,6 +655,39 @@ strong { font-weight: 600; }
   border: 2px solid var(--color-primary);
 }
 
+/* ----- Überhängendes Icon-Badge ----- */
+.offer-card__icon-badge {
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--bg-white);
+  border: 2px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(67, 55, 38, 0.13);
+}
+.offer-card__icon-badge i,
+.offer-card__icon-badge svg {
+  width: 38px;
+  height: 38px;
+  color: var(--color-primary-dark);
+}
+
+.offer-card__icon-badge--accent {
+  background: linear-gradient(135deg, #9caf8e, var(--color-primary));
+  border-color: transparent;
+}
+.offer-card__icon-badge--accent i,
+.offer-card__icon-badge--accent svg {
+  color: var(--text-light);
+}
+
+/* ----- Badge "Empfohlen" ----- */
 .offer-card__badge {
   position: absolute;
   top: -17px;
@@ -665,103 +702,123 @@ strong { font-weight: 600; }
   border-radius: 14px;
   padding: 0.55rem 2rem;
   white-space: nowrap;
+  z-index: 1;
 }
 
-.offer-card__icon {
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  background: var(--bg-accent);
-  color: var(--color-primary);
-  display: grid;
-  place-items: center;
-  margin: 0 auto 1.25rem;
-}
-.offer-card__icon i {
-  font-size: 34px;
-  line-height: 1;
-}
-
-.offer-card__icon--accent {
-  background: linear-gradient(135deg, #9caf8e, var(--color-primary));
-  color: var(--text-light);
-}
-
-.offer-card h3 {
+/* ----- Titel ----- */
+.offer-card__title {
   font-family: var(--font-heading);
-  font-size: 1.55rem;
-  text-align: center;
-  margin-bottom: 0.25rem;
+  font-size: 1.9rem;
+  letter-spacing: 0.12em;
+  font-weight: 400;
+  color: var(--text-main);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* ----- Script-Zeile mit Blättern ----- */
+.offer-card__script-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 6px 0 22px;
 }
 
 .offer-card__script {
-  font-family: var(--font-heading);
-  font-style: italic;
-  font-size: 1.1rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  font-weight: 500;
   color: var(--color-primary);
-  text-align: center;
-  margin-bottom: 1.25rem;
-  line-height: 1.3;
-}
-
-.offer-card__price {
-  background: var(--bg-soft);
-  border-radius: 16px;
-  padding: 1.25rem;
-  text-align: center;
-  margin-bottom: 1.25rem;
-}
-
-.offer-card__price span {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--color-primary-dark);
   line-height: 1;
 }
 
-.offer-card__price small {
-  display: block;
-  margin-top: 0.4rem;
-  color: var(--color-primary-dark);
-  font-weight: 600;
-  font-size: 0.85rem;
+.offer-card__leaf {
+  width: 44px;
+  height: 26px;
+  fill: #a9b79c;
+  flex-shrink: 0;
+}
+.offer-card__leaf--right {
+  transform: scaleX(-1);
 }
 
-.offer-card > p {
-  font-size: 0.93rem;
+/* ----- Band ----- */
+.offer-card__band {
+  background: var(--bg-accent);
   color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  padding: 10px 18px;
+  border-radius: 6px;
+  display: inline-block;
+  letter-spacing: 0.02em;
+  margin: 0 auto 22px;
 }
 
+/* ----- Preis ----- */
+.offer-card__price {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  color: var(--color-primary-dark);
+  margin: 0 0 26px;
+  font-weight: 400;
+}
+
+/* ----- Benefit-Liste ----- */
 .offer-card__list {
   list-style: none;
   padding: 0;
-  margin: 0 0 1.5rem;
-  font-size: 0.88rem;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+  text-align: left;
+  max-width: 340px;
   flex: 1;
 }
 
 .offer-card__list li {
   position: relative;
-  padding: 0.45rem 0 0.45rem 1.6rem;
+  padding: 0 0 0 34px;
+  margin-bottom: 16px;
   color: var(--text-main);
-  line-height: 1.5;
+  line-height: 1.45;
+  font-size: 1rem;
 }
 
 .offer-card__list li::before {
-  content: "✓";
+  content: "";
   position: absolute;
   left: 0;
-  top: 0.45rem;
-  font-weight: 800;
-  color: var(--color-primary);
-  font-size: 0.75rem;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
 }
 
-.offer-card .btn {
+/* ----- Organische Notizbox ----- */
+.offer-card__note {
+  background: var(--bg-accent);
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 22px 26px;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  max-width: 360px;
+  margin: 0 auto 20px;
+}
+
+.offer-card__note--accent {
+  background: var(--bg-soft);
+  border: 1px solid var(--color-line);
+}
+
+/* ----- Button ----- */
+.offer-card__btn {
   width: 100%;
   margin-top: auto;
   text-align: center;
@@ -1095,7 +1152,16 @@ strong { font-weight: 600; }
     grid-template-columns: 1fr;
     max-width: 480px;
     margin: 0 auto;
-    gap: 2rem;
+    gap: 60px;
+  }
+  .offer-card {
+    padding: 54px 24px 34px;
+  }
+  .offer-card__script {
+    font-size: 2rem;
+  }
+  .offer-card__title {
+    font-size: 1.6rem;
   }
 }
 
@@ -1235,6 +1301,115 @@ strong { font-weight: 600; }
   .benefit-card__icon {
     width: 72px;
     height: 72px;
+  }
+}
+
+/* ===== MODAL (Impressum / Datenschutz) ===== */
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(45, 45, 43, 0.55);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal-overlay[aria-hidden="false"] {
+  display: flex;
+}
+
+.modal {
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  max-width: 680px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modal-in 0.3s ease;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.modal__close {
+  position: sticky;
+  top: 0.75rem;
+  float: right;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg-accent);
+  color: var(--text-main);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  margin-right: 0.75rem;
+  transition: background var(--transition), color var(--transition);
+}
+.modal__close:hover {
+  background: var(--color-primary);
+  color: var(--text-light);
+}
+
+.modal__body {
+  padding: 0 2rem 2.5rem;
+}
+
+.modal__body h2 {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+  padding-right: 2rem;
+}
+
+.modal__body p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.85rem;
+}
+
+.modal__body p strong {
+  color: var(--text-main);
+}
+
+.modal__body a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.modal__body a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .modal__body {
+    padding: 0 1.25rem 1.75rem;
+  }
+  .modal__body h2 {
+    font-size: 1.35rem;
   }
 }
 
