@@ -866,7 +866,7 @@ strong { font-weight: 600; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   aspect-ratio: 3 / 4;
-  box-shadow: var(--shadow-soft);
+  background: transparent;
 }
 .about__image img {
   width: 100%;
@@ -1262,19 +1262,24 @@ strong { font-weight: 600; }
 
 /* ===== MOBILE: nur Überschriften, keine Texte ===== */
 @media (max-width: 767px) {
-  .benefit-card p {
-    display: none;
+  .benefit-card__summary {
+    justify-content: flex-start;
+    padding: 0.9rem 1.1rem;
   }
   .benefit-card__chevron {
-    display: none;
-  }
-  .benefit-card__summary {
-    cursor: default;
-    justify-content: center;
+    margin-left: auto;
   }
   .benefit-card__summary h3 {
-    text-align: center;
+    text-align: left;
     flex: 0 1 auto;
+    min-height: auto;
+  }
+  .benefit-card__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .benefit-card__icon i {
+    font-size: 1.2rem;
   }
 }
 
