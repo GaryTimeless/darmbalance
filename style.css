@@ -677,14 +677,25 @@ strong { font-weight: 600; }
   height: 38px;
   color: var(--color-primary-dark);
 }
+.offer-card__icon-badge i {
+  font-size: 38px;
+  line-height: 1;
+}
 
 .offer-card__icon-badge--accent {
   background: linear-gradient(135deg, #9caf8e, var(--color-primary));
-  border-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 .offer-card__icon-badge--accent i,
 .offer-card__icon-badge--accent svg {
+  width: 48px;
+  height: 48px;
   color: var(--text-light);
+}
+.offer-card__icon-badge--accent i {
+  font-size: 48px;
+  line-height: 1;
 }
 
 /* ----- Badge "Empfohlen" ----- */
