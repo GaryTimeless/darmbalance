@@ -284,7 +284,7 @@
   <section class="about" id="ueber-mich">
     <div class="container about__inner">
       <div class="about__image" data-animate>
-        <img src="christinePortrait.png" alt="Christine Lohmüller" />
+        <img src="christineportrait.png" alt="Christine Lohmüller" />
       </div>
       <div class="about__content" data-animate>
         <span class="about__label" data-content="about.label">Über mich</span>
@@ -541,6 +541,10 @@
     const btn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('.header__nav');
     btn?.addEventListener('click', () => nav.classList.toggle('open'));
+    // Schließen beim Klick auf einen Nav-Link (Event-Delegation)
+    nav?.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') nav.classList.remove('open');
+    });
   </script>
 
   <!-- ===== CONTENT LOADER ===== -->
