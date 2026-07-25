@@ -905,6 +905,43 @@ strong { font-weight: 600; }
   max-width: 62ch;
 }
 
+/* ===== ÜBER MICH Variante 3 — Flexbox mit gleicher Höhe ===== */
+#ueber-mich-v3 .about__inner {
+  display: flex;
+  align-items: stretch;
+  gap: 4rem;
+}
+#ueber-mich-v3 .about__image {
+  flex: 0 0 380px;
+  /* width fix, Höhe via align-stretch vom flex-parent → kein aspect-ratio/height setzen */
+}
+#ueber-mich-v3 .about__content {
+  flex: 1;
+}
+
+/* Tablet: Bildspalte schmaler */
+@media (max-width: 1024px) {
+  #ueber-mich-v3 .about__image {
+    flex: 0 0 280px;
+  }
+}
+
+/* Mobile: Spalten untereinander, Bild mit fester Höhe (aspect-ratio) */
+@media (max-width: 860px) {
+  #ueber-mich-v3 .about__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #ueber-mich-v3 .about__image {
+    flex: unset;
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+  }
+}
+
 /* ===== GUIDE SECTION ===== */
 .guide-section {
   padding: 4rem 0 5rem;
