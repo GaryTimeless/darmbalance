@@ -1001,6 +1001,18 @@ strong { font-weight: 600; }
   }
 }
 
+/* ===== SCROLL-OFFSET für Sticky-Header ===== */
+#start,
+#gut-fuer-dich,
+#laboranalyse,
+#angebot,
+#ueber-mich,
+#ueber-mich-v2,
+#ueber-mich-v3,
+#kontakt {
+  scroll-margin-top: 100px;
+}
+
 /* ===== TESTIMONIALS ===== */
 .testimonials {
   padding: 5rem 0;
