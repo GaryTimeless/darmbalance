@@ -20,10 +20,12 @@
         <img src="logo-icon-new.svg" alt="" class="header__logo-icon" width="48" height="48" />
         <span class="header__brand"><strong>DARM</strong>balance</span>
       </a>
-      <nav class="header__nav" aria-label="Hauptnavigation" data-content-list="header.nav">
-        <template>
-          <a data-content="label" data-content-href="href">Gut für dich</a>
-        </template>
+      <nav class="header__nav" aria-label="Hauptnavigation">
+        <a href="#gut-fuer-dich">Gut für dich</a>
+        <a href="#laboranalyse">Klarheit</a>
+        <a href="#angebot">Angebot</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
       </nav>
       <button class="mobile-menu-btn" aria-label="Menü öffnen">
         <span></span><span></span><span></span>
@@ -329,15 +331,23 @@
   <!-- ===== TESTIMONIALS ===== -->
   <section class="testimonials">
     <div class="container">
-      <h2 class="section-heading text-center" data-animate data-content="testimonials.heading">Das sagen andere</h2>
-      <div class="testimonials__grid" data-content-list="testimonials.quotes">
-        <template>
-          <div class="testimonial__card" data-animate>
-            <span class="testimonial__quote">&ldquo;</span>
-            <p data-content="text">Die Impulse haben mir geholfen, bewusster mit meiner Ernährung umzugehen und mehr auf meinen Körper zu hören.</p>
-            <cite data-content="citation">Lisa, 34</cite>
-          </div>
-        </template>
+      <h2 class="section-heading text-center" data-animate>Das sagen andere</h2>
+      <div class="testimonials__grid">
+        <div class="testimonial__card" data-animate>
+          <span class="testimonial__quote">&ldquo;</span>
+          <p>Die Empfehlungen waren alltagstauglich und leicht umzusetzen. Ich habe mich während der gesamten Begleitung gut aufgehoben gefühlt.</p>
+          <cite>Sarah, 45</cite>
+        </div>
+        <div class="testimonial__card" data-animate>
+          <span class="testimonial__quote">&ldquo;</span>
+          <p>Besonders gefallen hat mir, dass auf meine persönliche Situation eingegangen wurde. Ich habe viele hilfreiche Impulse für meinen Alltag mitgenommen.</p>
+          <cite>Daniela, 42</cite>
+        </div>
+        <div class="testimonial__card" data-animate>
+          <span class="testimonial__quote">&ldquo;</span>
+          <p>Die Impulse haben mir geholfen, bewusster mit meiner Ernährung umzugehen und mehr auf meinen Körper zu hören.</p>
+          <cite>Lisa, 34</cite>
+        </div>
       </div>
     </div>
   </section>
@@ -381,84 +391,6 @@
     });
   </script>
 
-  <!-- ===== CONTENT LOADER ===== -->
-  <script>
-    (function() {
-      var JSON_URL = 'data/site.json';
-
-      function getByPath(obj, path) {
-        return path.split('.').reduce(function(o, k) {
-          return o != null ? o[k] : undefined;
-        }, obj);
-      }
-
-      fetch(JSON_URL)
-        .then(function(r) {
-          if (!r.ok) throw new Error('HTTP ' + r.status);
-          return r.json();
-        })
-        .then(function(data) {
-          // --- Simple text replacements ---
-          document.querySelectorAll('[data-content]').forEach(function(el) {
-            var path = el.getAttribute('data-content');
-            var val = getByPath(data, path);
-            if (val == null) return;
-            el.textContent = val;
-          });
-
-          // --- Markdown-to-HTML fields (minimal: **bold**, \n → <br>) ---
-          document.querySelectorAll('[data-content-md]').forEach(function(el) {
-            var path = el.getAttribute('data-content-md');
-            var val = getByPath(data, path);
-            if (val == null) return;
-            var html = val
-              .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-              .replace(/\n/g, '<br>');
-            el.innerHTML = html;
-          });
-
-          // --- href replacements ---
-          document.querySelectorAll('[data-content-href]').forEach(function(el) {
-            var path = el.getAttribute('data-content-href');
-            var val = getByPath(data, path);
-            if (val == null) return;
-            el.setAttribute('href', path === 'footer.email' ? 'mailto:' + val : val);
-          });
-
-          // --- Template-based lists ---
-          document.querySelectorAll('[data-content-list]').forEach(function(container) {
-            var path = container.getAttribute('data-content-list');
-            var items = getByPath(data, path);
-            if (!Array.isArray(items)) return;
-            var tpl = container.querySelector('template');
-            if (!tpl) return;
-            container.innerHTML = '';
-            items.forEach(function(item) {
-              var clone = document.importNode(tpl.content, true);
-              clone.querySelectorAll('[data-content]').forEach(function(el) {
-                var p = el.getAttribute('data-content');
-                var v = getByPath(item, p);
-                if (v != null) el.textContent = v;
-              });
-              clone.querySelectorAll('[data-content-href]').forEach(function(el) {
-                var p = el.getAttribute('data-content-href');
-                var v = getByPath(item, p);
-                if (v != null) el.setAttribute('href', v);
-              });
-              container.appendChild(clone);
-            });
-          });
-
-          // Re-observe new elements from templates (e.g. testimonials)
-          document.querySelectorAll('[data-animate], [data-animate-delay]').forEach(function(el) {
-            observer.observe(el);
-          });
-        })
-        .catch(function(err) {
-          console.warn('DARMbalance: Could not load data/site.json, using hardcoded defaults.', err);
-        });
-    })();
-  </script>
 
   <!-- ===== MODALS (Impressum / Datenschutz) ===== -->
   <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
